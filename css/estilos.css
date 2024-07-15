@@ -85,9 +85,23 @@ html {
   width: 50%;
 }
 
+.line-2 {
+  width: 92%;
+}
+
 .line-3 {
   width: 50%;
   margin-left: auto;
+}
+
+.change .line-1 {
+  transform: translate(100%, 2rem) rotate(40deg);
+  transform-origin: right;
+}
+
+.change .line-3 {
+  transform: translateY(-2rem) rotate(-40deg);
+  transform-origin: right;
 }
 
 .nav-list {
@@ -101,6 +115,12 @@ html {
   opacity: 0;
   visibility: hidden;
   transition: all 0.2s;
+}
+
+.change .nav-list {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.7s 0.5s;
 }
 
 .nav-link {
